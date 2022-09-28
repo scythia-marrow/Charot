@@ -18,9 +18,13 @@ github.com/CompVis/stable-diffusion
 Charot uses python setuptools to install. Simply download the source code with
 git, then setup with python.
 
-> git clone https://github.com/scythia-marrow/Charot.git
-> cd Charot
-> python3 setup.py build
+```
+git clone https://github.com/scythia-marrow/Charot.git
+
+cd Charot
+
+python3 setup.py build
+```
 
 ## Thanks for reading
 Love you!
