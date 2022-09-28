@@ -13,5 +13,14 @@ Charot can be linked with stable diffusion to create character art and
 fully rendered character cards:
 github.com/CompVis/stable-diffusion
 
+## Installation
+
+Charot uses python setuptools to install. Simply download the source code with
+git, then setup with python.
+
+> git clone https://github.com/scythia-marrow/Charot.git
+> cd Charot
+> python3 setup.py build
+
 ## Thanks for reading
 Love you!
