@@ -118,16 +118,13 @@ def pronounPick(umbrella, specific, weight = []):
 	pid,pick = pickWeight(name,weight)
 	return (pid,pick)
 
-def chargen(description):
+def generateGender(bias = None):
 	# First, pick the gender umbrella
 	guI,genderUmbrella = genderUmbrellaPick()
 	# Next, pick a subset if wanted / needed
 	genderSpecific = genderSpecificPick(genderUmbrella)
 	pri,pronoun = pronounPick(genderUmbrella,genderSpecific)
-	print(genderUmbrella)
-	print(genderSpecific)
-	print(pronoun)
 	return set([genderUmbrella]),genderSpecific,set([pronoun])
 
 if __name__ == "__main__":
-	chargen("A blue person")
+	generateGender()
