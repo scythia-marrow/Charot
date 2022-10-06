@@ -1,10 +1,12 @@
 #include <pybind11/pybind11.h>
 #include "namegen.h"
+#include <stdio.h>
 
 char* generateName(char* prompt, unsigned long seed)
 {
-	char* buff = (char*)malloc(sizeof(char)*256);
-	namegen(buff,sizeof(buff),prompt,&seed);
+	unsigned long buffsize = sizeof(char) * 256;
+	char* buff = (char*)malloc(buffsize);
+	namegen(buff,buffsize,prompt,&seed);
 	return buff;
 }
 

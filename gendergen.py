@@ -118,7 +118,9 @@ def pronounPick(umbrella, specific, weight = []):
 	pid,pick = pickWeight(name,weight)
 	return (pid,pick)
 
-def generateGender(bias = None):
+def generateGender(seed = None):
+	# set the seed if needed
+	if not seed == None: random.seed(seed)
 	# First, pick the gender umbrella
 	guI,genderUmbrella = genderUmbrellaPick()
 	# Next, pick a subset if wanted / needed

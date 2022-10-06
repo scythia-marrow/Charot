@@ -109,7 +109,9 @@ def attractionToLabel(umbrella,gender=None):
 	return label
 
 # Return an orientation
-def generateOrientation(gender=None):
+def generateOrientation(gender=None,seed=None):
+	# Set seed if needed
+	if not seed == None: random.seed(seed)
 	# First generate umbrellas for each type of attraction
 	umbrella = []
 	# Generate identities the character is attracted to
