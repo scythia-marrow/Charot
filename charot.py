@@ -1,6 +1,6 @@
-from namegen import namegen
-from gendergen import generateGender
-from orientationgen import generateOrientation
+from .namegen import namegen
+from .gendergen import generateGender
+from .orientationgen import generateOrientation
 import random
 
 #NameTemplates

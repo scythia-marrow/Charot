@@ -1,6 +1,6 @@
 # Gender is expressed in a wild amount of cultural ways, that's awesome!
 import random
-from utils import pickWeight
+from .utils import pickWeight
 
 genderUmbrella = [
 	("A","Agender"),
