@@ -1,6 +1,6 @@
 # People are weird and wild in their sexuality! Let's celebrate it!
-import random
 from .utils import pickWeight
+import random
 
 # TODO put these in files, make a more general topology-based algorithm
 orientationTypes = [

@@ -22,13 +22,13 @@ if __name__ == "__main__":
 		if not gitFetch(name, url): exit(-1)
 	# Move headers to main directory
 	header = glob("fantasyname/c/*.h")
-	for head in header: run(f"cp {head} .",shell=True)
+	for head in header: run(f"cp {head} components/",shell=True)
 	# Bind the external FNG module
-	FNGfiles = ['namegenhook.cpp']
+	FNGfiles = ['components/namegenhook.cpp']
 	FNGmodule = Pybind11Extension('namegen', FNGfiles)
 	setup(name = 'FNG',
 		description = 'A python wrapper for fantasyname',
 		ext_modules = [FNGmodule])
 	# After setup, move the library file(s) into the runtime directory
 	libloc = glob("build/lib*/*")[0]
-	run(f"cp {libloc} .", shell=True)
+	run(f"cp {libloc} components/", shell=True)
