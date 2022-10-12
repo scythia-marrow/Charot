@@ -1,17 +1,14 @@
 # Charot
 
 A generator for creating fantasy characters with tons of options
-including gender, sexuality, style, race, class, origin locations, and
-backstory.
+including names, gender, and sexuality.
+This generator runs the backend of the app at
+[scythiamarrow.org](scythiamarrow.org/app/createcharacter).
 
-## Components
+## Credits
 
-Charot uses names from the fantastic fantasy name generator by skeeto:
-github.com/skeeto/fantasyname
-
-Charot can be linked with stable diffusion to create character art and
-fully rendered character cards:
-github.com/CompVis/stable-diffusion
+Charot generates names using custom templates passed to the fantastic
+fantasy name generator by [skeeto](github.com/skeeto/fantasyname).
 
 ## Installation
 
@@ -25,6 +22,30 @@ cd Charot
 
 python3 setup.py build
 ```
+
+## Use
+
+Charot can be imported from the built "charot" package
+
+```
+from charot import charot
+character = charot.charot() #returns a name, gender, orientation tuple
+```
+
+Charot can also be run directly from python, which will print a character
+to the command line.
+
+```
+python3 test.py
+```
+
+## Plans
+
+Creating characters using text prompt keyword information.
+
+Style, race, class, origin locations, and backstories.
+
+Automatic character portraits using stable diffusion.
 
 ## Thanks for reading
 Love you!
