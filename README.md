@@ -3,12 +3,12 @@
 A generator for creating fantasy characters with tons of options
 including names, gender, and sexuality.
 This generator runs the backend of the app at
-[scythiamarrow.org](scythiamarrow.org/app/createcharacter).
+[scythiamarrow.org](https://scythiamarrow.org/app/createcharacter).
 
 ## Credits
 
 Charot generates names using custom templates passed to the fantastic
-fantasy name generator by [skeeto](github.com/skeeto/fantasyname).
+fantasy name generator by [skeeto](https://github.com/skeeto/fantasyname).
 
 ## Installation
 
